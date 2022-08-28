@@ -24,7 +24,7 @@ class PatchEmbedding(nn.Module):
         :param x: shape (n_samples, input_channels, image_size, image_size), i.e. square image.
         """
         projection = self.projection(x)
-        projection = projection.flatten(2)  # shape (n_samples, embedding_dim, sqrt(n_patches), sqrt(n_patches))
+        projection = projection.flatten(start_dim=2)  # shape (n_samples, embedding_dim, sqr(n_patches), sqr(n_patches))
         projection = projection.transpose(1, 2)  # shape (n_samples, n_patches, embedding_dim)
         return projection
 
