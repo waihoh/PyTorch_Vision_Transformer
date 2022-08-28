@@ -1,7 +1,7 @@
 # PyTorch_Vision_Transformer
 Vision Transformer (ViT) in PyTorch
 
-Learning ViT from https://github.com/BobMcDear/PyTorch-Vision-Transformer
+Learning ViT from https://github.com/YousefGamal220/Vision-Transformers
 
 # Libraries
 
