@@ -4,9 +4,9 @@ import torch.nn as nn
 class PatchEmbedding(nn.Module):
     def __init__(self, image_size, patch_size, input_channels=3, embedding_dims=768):
         """
-        :param image_size: the size of the image assuming that the image is square, i.e. height = width
-        :param patch_size: size of the batch assuming that it is square
-        :param input_channels: 1 for gray-scale and 3 for RGB channels
+        :param image_size: int, the size of the image assuming that the image is square, i.e. height = width
+        :param patch_size: int, size of the batch assuming that it is square
+        :param input_channels: int, 1 for gray-scale and 3 for RGB channels
         :param embedding_dims: int, the dimension of the embedding layer
         """
         super().__init__()
