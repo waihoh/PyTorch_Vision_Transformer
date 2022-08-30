@@ -10,7 +10,7 @@ LEARNING_RATE = 1e-3
 device = torch.device('cpu')
 
 vision_transformer = VisionTransformer(image_size=32).to(device)
-losses = train(vision_transformer, EPOCHS, LEARNING_RATE, data_loader)
+losses = train(vision_transformer, EPOCHS, LEARNING_RATE, data_loader, device)
 
 # The current code runs on cpu.
 # TODO: To test the code on GPU
